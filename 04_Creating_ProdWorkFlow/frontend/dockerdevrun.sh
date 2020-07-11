@@ -1,0 +1,1 @@
+docker run  -t -p 3000:3000 42fe6ff904a7
