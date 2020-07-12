@@ -1,1 +1,1 @@
-docker run  -t -p 3000:3000 42fe6ff904a7
+docker run -it -p 3000:3000 -v /app/node_modules -v pwd:/app e1c5979a4809
