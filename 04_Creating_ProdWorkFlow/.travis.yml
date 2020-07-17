@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t aviralksingh/docker-react -f ./04_Creating_ProdWorkFlow/Dockerfile.dev ./04_Creating_ProdWorkFlow/
+
+script:
+    - docker run aviralksingh/docker-react npm run test -- --coverage
